@@ -1,13 +1,14 @@
 #include "anagram.h"
+using namespace std;
 
-bool Anagram::WordPairIsAnagram(const std::string& word1, const std::string& word2) {
+bool Anagram::WordPairIsAnagram(const string& word1, const string& word2) {
     //Fill the correct implementation here
     return false;
 }
 
-std::vector<std::string> Anagram::SelectAnagrams(
-        const std::string& word,
-        const std::vector<std::string>& candidates) {
+vector<std::string> Anagram::SelectAnagrams(
+        const string& word,
+        const vector<std::string>& candidates) {
     //Fill the correct implementation here
     return candidates;
 }
