@@ -1,11 +1,11 @@
 #include <string>
 #include <vector>
-
+using namespace std;
 namespace Anagram
 {
-    bool WordPairIsAnagram(const std::string& word1, const std::string& word2);
+    bool WordPairIsAnagram(const string& word1, const string& word2);
 
-    std::vector<std::string> SelectAnagrams(
-        const std::string& word,
-        const std::vector<std::string>& candidates);
+    std::vector<string> SelectAnagrams(
+        const string& word,
+        const vector<std::string>& candidates);
 } // namespace Anagram
