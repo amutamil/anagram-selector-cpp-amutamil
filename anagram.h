@@ -7,5 +7,5 @@ namespace Anagram
 
     vector<string> SelectAnagrams(
         const string& word,
-        const vector<std::string>& candidates);
+        const vector<string>& candidates);
 } // namespace Anagram
