@@ -6,9 +6,9 @@ bool Anagram::WordPairIsAnagram(const string& word1, const string& word2) {
     return false;
 }
 
-vector<std::string> Anagram::SelectAnagrams(
+vector<string> Anagram::SelectAnagrams(
         const string& word,
-        const vector<std::string>& candidates) {
+        const vector<string>& candidates) {
     //Fill the correct implementation here
     return candidates;
 }
