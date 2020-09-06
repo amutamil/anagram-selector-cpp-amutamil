@@ -5,7 +5,7 @@ namespace Anagram
 {
     bool WordPairIsAnagram(const string& word1, const string& word2);
 
-    std::vector<string> SelectAnagrams(
+    vector<string> SelectAnagrams(
         const string& word,
         const vector<std::string>& candidates);
 } // namespace Anagram
