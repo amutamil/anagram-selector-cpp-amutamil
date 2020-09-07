@@ -1,11 +1,12 @@
 #include "anagram.h"
+#include<algorithm>
 using namespace std;
 
 
 string arrange(string& str)
 {
     int count = 0;string str2;
-    for (int i = 0;i < str.length();i++)
+    for (unsigned int i = 0;i < str.length();i++)
     {
         if (str[i] != ' ')
         {
@@ -24,7 +25,7 @@ bool Anagram::WordPairIsAnagram(const string& word1, const string& word2) {
     string word2_arranged = arrange(word2copy);
     if (word1_arranged.length() != word2_arranged.length())
         return false;
-    for (int i = 0;i < word1_arranged.length();i++)
+    for (unsigned int i = 0;i < word1_arranged.length();i++)
     {
         if (word1_arranged[i] != word2_arranged[i])
         {
@@ -39,7 +40,7 @@ vector<string> Anagram::SelectAnagrams(
         const vector<string>& candidates) {
     //Fill the correct implementation here
     vector<string> selection;
-    for (int i = 0;i < candidates.size();i++)
+    for (unsigned int i = 0;i < candidates.size();i++)
     {
         if (WordPairIsAnagram(word, candidates[i]))
             selection.push_back(candidates[i]);
