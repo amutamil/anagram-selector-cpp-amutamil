@@ -19,13 +19,13 @@ string arrange(string& str)
     return str2;
 }
 
-bool checklength( string& word1,  string& word2)
+bool checklength( string word1,  string word2)
 {
     if (word1.length() != word2.length())
     {   return false;    }     
     return true;
 }
-bool checkChar( string& word1,  string& word2)
+bool checkChar( string word1,  string word2)
 {
     for (unsigned int i = 0;i < word1.length();i++)
     {
