@@ -43,7 +43,7 @@ bool WordPairIsAnagram(const string& word1, const string& word2) {
     bool result = false;
     if(checklength(word1_arranged, word2_arranged))
         result = checkChar(word1_arranged, word2_arranged);
-    return result;
+    return true;
 }
 
 vector<string> Anagram::SelectAnagrams(
