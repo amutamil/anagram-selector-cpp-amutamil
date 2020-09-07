@@ -21,7 +21,7 @@ string arrange(string& str)
 
 bool checklength( string& word1,  string& word2)
 {
-    if (word1.length() = word2.length())
+    if (word1.length() == word2.length())
     {   return true;    }     
     return false;
 }
@@ -40,7 +40,7 @@ bool Anagram::WordPairIsAnagram(const string& word1, const string& word2) {
     string word1copy = word1;string word2copy = word2;
     string word1_arranged = arrange(word1copy);
     string word2_arranged = arrange(word2copy);
-    bool result false;
+    bool result = false;
     if(checklength(word1_arranged, word2_arranged))
         result = checkChar(word1_arranged, word2_arranged);
     return result;
