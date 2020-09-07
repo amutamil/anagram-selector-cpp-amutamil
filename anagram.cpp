@@ -19,20 +19,30 @@ string arrange(string& str)
     return str2;
 }
 
-bool Anagram::WordPairIsAnagram(const string& word1, const string& word2) {
-    string word1copy = word1, word2copy = word2;
-    string word1_arranged = arrange(word1copy);
-    string word2_arranged = arrange(word2copy);
-    if (word1_arranged.length() != word2_arranged.length())
+bool checklength(const string& word1, const string& word2)
+{
+    if (word1.length() != word2.length())
         return false;
-    for (unsigned int i = 0;i < word1_arranged.length();i++)
+}
+bool checkChar(const string& word1, const string& word2)
+{
+    for (unsigned int i = 0;i < word1.length();i++)
     {
-        if (word1_arranged[i] != word2_arranged[i])
+        if (word1[i] != word2[i])
         {
             return  false;
         }
     }
     return true;
+}
+bool WordPairIsAnagram(const string& word1, const string& word2) {
+    string word1copy = word1;string word2copy = word2;
+    string word1_arranged = arrange(word1copy);
+    string word2_arranged = arrange(word2copy);
+    bool result = false;
+    if(checklength(word1_arranged, word2_arranged))
+        result = checkChar(word1_arranged, word2_arranged);
+    return result;
 }
 
 vector<string> Anagram::SelectAnagrams(
