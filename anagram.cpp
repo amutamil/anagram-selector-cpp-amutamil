@@ -22,7 +22,8 @@ string arrange(string& str)
 bool checklength(const string& word1, const string& word2)
 {
     if (word1.length() != word2.length())
-        return false;
+    {   return false;    }     
+    return true;
 }
 bool checkChar(const string& word1, const string& word2)
 {
