@@ -2,6 +2,7 @@
 #include<algorithm>
 using namespace std;
 
+/*---------------------------------------checkinhg pull requests----------------------------------*/
 
 string arrange(string& str)
 {
